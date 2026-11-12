@@ -1,4 +1,4 @@
-function VP(){var p=location.pathname.replace(/\/+$/,'');var s=p.substring(p.lastIndexOf('/')+1);if(!s||/^index(\.html)?$/i.test(s))return '/';return '/'+s.replace(/\.html$/i,'');}
+function VP(){var p=location.pathname;if(/\/$/.test(p))return '/';var s=p.substring(p.lastIndexOf('/')+1);if(!s||/^index(\.html)?$/i.test(s))return '/';return '/'+s.replace(/\.html$/i,'');}
 
   const faqs=[
     ["How do I know if my roof needs replacement?","Look for missing or curling shingles, granules in the gutters, leaks, or a roof older than 20 years. We offer a free inspection to give you a clear answer."],
